@@ -10,7 +10,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	font-family: "Inter", serif;
-    background-color: #f3f5f8;
+	background-color: #f3f5f8;
 }
 header {
 	padding: 20px;
@@ -23,11 +23,11 @@ main {
 	display: grid;
 	grid-template-columns: 1fr;
 	padding: 20px;
-    border-radius: 18px;
-    background-color: white;
+	border-radius: 18px;
+	background-color: white;
 }
-#first-section{
-    border-radius: 18px 8px 0px 0px;
+#first-section {
+	border-radius: 18px 8px 0px 0px;
 }
 h2 {
 	font-size: 16px;
@@ -35,13 +35,7 @@ h2 {
 	letter-spacing: -0.3px;
 	font-weight: 600;
 }
-.date {
-	font-size: 12px;
-	font-family: 400;
-	letter-spacing: -0.2px;
-	line-height: 14.4px;
-	color: #2b303b;
-}
+
 .notes {
 	border-bottom: solid 2px #e0e4ea;
 	padding: 15px;
@@ -84,7 +78,7 @@ li {
 li:hover {
 	background-color: #ebf1ff;
 }
-button {
+#enable {
 	background-color: #335cff;
 	padding: 13px 16px;
 	border-radius: 50%;
@@ -93,23 +87,74 @@ button {
 	position: fixed;
 	bottom: 72px;
 	right: 16px;
+	cursor: pointer;
 }
-button:active {
+#enable:active {
 	background-color: #1f43d3;
 	transform: translateY(4px);
 	box-shadow: 0px 7px 11px 0px #797e87b2;
 }
 
-.sec{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.divArwDel {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
-.apr{
-    display: flex;
-    flex-direction: row;
+.snd-part {
+	margin-inline: 10px;
+	margin-block: 10px;
+	gap: 15px;
+	flex-direction: column;
+	display: none;
 }
-p{
-    width: fit-content;
+
+#goBack {
+	background-color: #fff;
+	border: none;
+}
+.snd-part section h2 {
+	font-size: 24px;
+	letter-spacing: -0.5px;
+	line-height: 28.8px;
+	margin-bottom: 15px;
+}
+.divArw {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+#bugging-image {
+	width: 10%;
+}
+.divDel {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.save {
+	color: #335cff;
+}
+.divTag2 {
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+}
+.divTotal {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+textarea {
+	resize: none;
+	width: 100%;
+	height: 550px;
+	font-family: Inter;
+	color: #232530;
+	font-size: 14px;
+	line-height: 18.2px;
+	letter-spacing: -0.2px;
+	border: none;
+	outline: none;
+	margin-top: 25px;
 }
